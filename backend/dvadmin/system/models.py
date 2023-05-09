@@ -466,3 +466,35 @@ class MessageCenterTargetUser(CoreModel):
         db_table = table_prefix + "message_center_target_user"
         verbose_name = "消息中心目标用户表"
         verbose_name_plural = verbose_name
+
+
+class Device_information(models.Model):
+    Brand = models.CharField(max_length=20)
+    SPECIFICATION = models.CharField(max_length=20)
+    STATE = models.CharField(max_length=3)
+    VOLTMETER = models.IntegerField()
+    POWER = models.IntegerField()
+    TIME_A = models.IntegerField()
+    TIME_OPEN = models.IntegerField()
+    DAY_POWER = models.IntegerField()
+    WARING_TIMES = models.IntegerField()
+    WARING_REASON = models.TextField()
+
+
+class Device_information2(models.Model):
+    DEVICE_ID = models.CharField(max_length=20)
+    Brand = models.CharField(max_length=20)
+    SPECIFICATION = models.CharField(max_length=20)
+    STATE = models.CharField(max_length=3)
+    VOLTMETER = models.IntegerField()
+    POWER = models.IntegerField()
+    TIME_A = models.IntegerField()
+    TIME_OPEN = models.IntegerField()
+    DAY_POWER = models.IntegerField()
+    WARING_TIMES = models.IntegerField()
+    WARING_REASON = models.TextField()
+
+
+
+
+
